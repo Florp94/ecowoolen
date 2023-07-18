@@ -1,0 +1,76 @@
+
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+#hero .hero_title {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.3s;
+}
+
+#hero .hero_h2 {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.3s;
+}
+
+#hero p {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.3s;
+}
+
+.hero_btn {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.3s;
+}
+
+.img_hero img {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.3s;
+}
+
+.about_text {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-left 0.9s ease-in-out;
+    animation-delay: 0.3s;
+}
+
+.img_about {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.3s;
+}
+
+.parent {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.3s;
+}

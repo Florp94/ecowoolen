@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Formulario</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/assets/logos/logoecowoolen.png" alt="logo ecowoolen">
+            </div>
+            <ul class="nav_links">
+                <input type="checkbox" id="check_toggle">
+                <label for="check_toggle" class="hamburguer"><i class="fa-solid fa-bars"></i></label>
+
+                <div class="menu">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/cardsprueba.html">Productos</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="/login.html" target="_blank">Registrate/Login</a></li>
+                    <span class="line"></span>
+                   <div class="cart_fav">
+                    <li><a href="#"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
+                    <li cart_nav><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                </div>
+                </div>
+                
+            </ul>
+            <div class="overlay"></div> 
+        </nav>
+    </header>
+    
+    <main>
+
+        <div class="container_form" id="register">
+            <div class="information">
+                <div class="info_childs">
+                    <h2>Bienvenido</h2>
+                    <p>Para unirte a nuestra comunidad por favor Inicia Sesión con tus datos</p>
+                    <input type="button" value="Iniciar Sesión" id="sign_in">
+                </div>
+            </div>
+            <div class="form_information">
+                <div class="form_info_childs">
+                    <h2> Crear una Cuenta</h2>
+                    <div class="icons">
+                        <i class="fa-brands fa-google" style="padding:  10px 11px;"></i>
+                        <i class="fa-brands fa-facebook-f" style="padding:  10px 13px;"></i>
+                    </div>
+                    <p>o usa tu email para registrarte</p>
+                    <form class="form">
+                        <label>
+                            <i class="fa-regular fa-circle-user"></i>
+                            <input type="text" placeholder="Nombre Completo">
+                        </label>
+                        <label>
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="email" placeholder="Correo Electronico">
+                        </label>
+                        <label>
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="Contraseña">
+                        </label>
+                        <input type="submit" value="Registrarse">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container_form hide" id="login">
+            <div class="information">
+                <div class="info_childs">
+                    <h2>¡Bienvenido Nuevamente!</h2>
+                    <p>Para unirte a nuestra comunidad por favor Inicia Sesión con tus datos</p>
+                    <input type="button" value="Registrarse" id="sign_up">
+                </div>
+            </div>
+            <div class="form_information">
+                <div class="form_info_childs">
+                    <h2> Iniciar Sesión</h2>
+                    <div class="icons">
+                        <i class="fa-brands fa-google" style="padding:  10px 11px;"></i>
+                        <i class="fa-brands fa-facebook-f" style="padding:  10px 13px;"></i>
+                    </div>
+                    <p>o iniciar sesión con una cuenta</p>
+                    <form class="form">
+                        <label>
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="email" placeholder="Correo Electronico">
+                        </label>
+                        <label>
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="Contraseña">
+                        </label>
+                        <input type="submit" value="Iniciar Sesión">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer_content">
+            <div class="footer_card">
+                <div class="footer_logo">
+                    <img src="/assets/logos/logoecowoolen.png" alt="logo">
+                </div>
+
+            </div>
+
+            <div class="footer_card">
+                <div class="footer_social">
+                    <h4>Contactanos</h4>
+                    <p>Seguinos en nuestras redes sociales</p>
+                    <a href="https://m.facebook.com" class="footer_face"><i class="fa-brands fa-facebook"></i>EcoWoolen Lanas</a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i>@Ecowoolelanas</a>
+                    Comunicate con Nosotros
+                    <a href="https://goo.gl/maps/y5MmrURjBTE4KnEr7" class="footer_direccion"><i class="fa-solid fa-location-dot"></i>Avenida Siempre Viva 123, CABA.</a>
+                    <a href="https://www.whatsapp.com/?lang=es"><i class="fa-brands fa-whatsapp"></i>1144558822</a>
+
+                </div>
+
+            </div>
+
+            <div class="footer_card">
+                <div class="footer_form">
+                    <form action="">
+                        <h4>Suscribite a Nuestro Newslatter</h4>
+                        <p>No te pierdas ninguna promoción</p>
+                        <label for="get_email">Ingresa tu Email</label>
+                        <input id="get_email" type="email">
+                        <label for="get_Nombre">Ingresa tu Nombre</label>
+                        <input id="get_email" type="text">
+                        <a href="#">Enviar</a>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="/login.js"></script>
+</body>
+</html>

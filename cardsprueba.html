@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos EcoWoolen</title>
+  <link rel="stylesheet" href="/cards.css">
+  <link rel="stylesheet" href="/Animaciones.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/assets/logos/logoecowoolen.png" alt="logo ecowoolen">
+        </div>
+        <ul class="nav_links">
+            <input type="checkbox" id="check_toggle">
+            <label for="check_toggle" class="hamburguer"><i class="fa-solid fa-bars"></i></label>
+
+            <div class="menu">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/cardsprueba.html">Productos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="/login.html">Registrate/Login</a></li>
+            </div>
+        </ul>
+
+        <!-- carrito -->
+
+        <label for="cart_toggle" class="cart_label">
+          <i class="fa-solid fa-cart-arrow-down cart_icon">
+
+          </i>
+        </label>
+        <input type="checkbox" id="cart_toggle">
+
+        <div class="cart">
+          <h2>Tu Carrito</h2>
+
+
+          <div class="cart_item">
+            <img src="/assets/imgproducto/img/lanashetlandlisto.jpg" alt="img del carrito">
+            <div class="item_info">
+              <h3 class="item_title">Bahia de 150Grs. Algodón 8-6</h3>
+              
+              <span class="item_price">$950.00</span>
+            </div>
+            <div class="item_handler">
+              <span class="quantity_handler down" >-</span>
+              <span class="item_quantity">1</span>
+              <span class="quantity_handler up">+</span>
+
+            </div>
+          </div>
+          <div class="cart_item">
+            <img src="/assets/imgproducto/img/macramehilolisto.jpg" alt="img del carrito">
+            <div class="item_info">
+              <h3 class="item_title">Macramé de 150Grs. Algodón 8-6</h3>
+              
+              <span class="item_price">$950.00</span>
+            </div>
+            <div class="item_handler">
+              <span class="quantity_handler down" >-</span>
+              <span class="item_quantity">1</span>
+              <span class="quantity_handler up">+</span>
+
+            </div>
+          </div>
+          <div class="cart_item">
+            <img src="/assets/imgproducto/img/lanashetlandlisto.jpg" alt="img del carrito">
+            <div class="item_info">
+              <h3 class="item_title">Bahia de 150Grs. Algodón 8-6</h3>
+              <span class="item_price">$950.00</span>
+            </div>
+            <div class="item_handler">
+              <span class="quantity_handler down" >-</span>
+              <span class="item_quantity">1</span>
+              <span class="quantity_handler up">+</span>
+
+            </div>
+          </div>
+          <div class="cart_item">
+            <img src="/assets/imgproducto/img/lanashetlandlisto.jpg" alt="img del carrito">
+            <div class="item_info">
+              <h3 class="item_title">Bahia de 150Grs. Algodón 8-6</h3>
+              <span class="item_price">$950.00</span>
+            </div>
+            <div class="item_handler">
+              <span class="quantity_handler down" >-</span>
+              <span class="item_quantity">1</span>
+              <span class="quantity_handler up">+</span>
+
+            </div>
+          </div>
+          <div class="cart_item">
+            <img src="/assets/imgproducto/img/lanashetlandlisto.jpg" alt="img del carrito">
+            <div class="item_info">
+              <h3 class="item_title">Bahia de 150Grs. Algodón 8-6</h3>
+              <span class="item_price">$950.00</span>
+            </div>
+            <div class="item_handler">
+              <span class="quantity_handler down" >-</span>
+              <span class="item_quantity">1</span>
+              <span class="quantity_handler up">+</span>
+
+            </div>
+          </div>
+
+          <span class="divider"></span>
+
+          <div class="cart_total">
+            <p>Total</p>
+            <span>$950.00</span>
+          </div>
+
+          <button class="btn_add">COMPRAR</button>
+
+        </div>
+
+        <!-- <div class="cart_label">
+          <i class="fa-solid fa-cart-arrow-down">
+            <div class="cart_bubble">
+              0
+            </div>
+          </i>
+      </div> -->
+      
+
+        <div class="overlay"></div> 
+    </nav>
+</header>
+
+<section id="productos">
+  <div class="container_filter">
+    <h3>Productos</h3>
+    <ul class="filtro">
+      <li class="filtros_li">
+        <a href="">Todos</a>
+         
+      </li>
+      <li class="filtros_li">
+        <a href="">Hilos</a>
+        
+      </li>
+      <li class="filtros_li">
+        <a href="">Lanas</a>
+        
+      </li>
+      <li class="filtros_li">
+        <a href="">Combos</a>
+        
+      </li>
+      <li class="filtros_li">
+        <a href="">Accesorios</a>
+        
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+  <div class="parent">
+
+<!-- Hilo -->
+
+    <div class="card_parent">
+      <img src="/assets/imgproducto/img/lanaspastel.jpg" alt="lanas">
+      <div class="fav_filter">
+        <i class="fa-regular fa-heart"></i>
+        <p>Hilo</p>
+      </div>
+      <h4>Bahia de 150Grs. Algodón 8-6</h4>
+      <div class="color">
+        <button>B</button>
+        <button>L</button>
+        <button>R</button>
+      </div>
+      <div class="precio_btn">
+        <h2> $950.00 </h2>
+        <button class="btn_compra" data-id="id" data-name="name" data-precio="precio" data-img="img" href="#"> <i class="fa-solid fa-cart-plus"></i> </button>
+      </div>
+
+      
+    </div>
+
+    <div class="card_parent">
+      <img src="/assets/imgproducto/img/macramehilolisto.jpg" alt="lanas">
+      <div class="fav_filter">
+        <i class="fa-regular fa-heart"></i>
+        <p>Hilo</p>
+      </div>
+      <h4>Macramé de 150Grs. Algodón 8-6</h4>
+      <div class="color">
+        <button>B</button>
+        <button>L</button>
+        <button>R</button>
+      </div>
+      <div class="precio_btn">
+        <h2> $950.00 </h2>
+        <button class="btn_compra" href="#"> <i class="fa-solid fa-cart-plus"></i> </button>
+      </div>
+    </div>
+
+    <div class="card_parent">
+      <img src="/assets/imgproducto/img/hilosedalisto.jpg" alt="Hilo">
+      <div class="fav_filter">
+        <i class="fa-regular fa-heart"></i>
+        <p>Hilo</p>
+      </div>
+      <h4>Seda de 150Grs. Algodón mediano 8-3</h4>
+      <div class="color">
+        <button>B</button>
+        <button>L</button>
+        <button>R</button>
+      </div>
+      <div class="precio_btn">
+        <h2> $950.00 </h2>
+        <button class="btn_compra" href="#"> <i class="fa-solid fa-cart-plus"></i> </button>
+      </div>
+    </div>
+
+    <div class="card_parent">
+      <img src="/assets/imgproducto/img/hiloyuterusticolisto.jpg" alt="Hilo">
+      <div class="fav_filter">
+        <i class="fa-regular fa-heart"></i>
+        <p>Hilo</p>
+      </div>
+      <h4>Yute de 150Grs. Rustico 30 Mts.</h4>
+      <div class="color">
+        <button>B</button>
+        <button>L</button>
+        <button>R</button>
+      </div>
+      <div class="precio_btn">
+        <h2> $950.00 </h2>
+        <button class="btn_compra" href="#"> <i class="fa-solid fa-cart-plus"></i> </button>
+      </div>
+    </div>
+
+    <!-- Lanas -->
+
+    <div class="card_parent">
+      <img src="/assets/imgproducto/img/lanashetlandlisto.jpg" alt="lanas">
+      <div class="fav_filter">
+        <i class="fa-regular fa-heart"></i>
+        <p>Lana</p>
+      </div>
+      <h4>Shetland de 150Grs. Algodón 8-6</h4>
+      <div class="color">
+        <button>B</button>
+        <button>L</button>
+        <button>R</button>
+      </div>
+      <div class="precio_btn">
+        <h2> $950.00 </h2>
+        <button class="btn_compra" href="#"> <i class="fa-solid fa-cart-plus"></i> </button>
+      </div>
+    </div>
+
+    <div class="card_parent">
+      <img src="/assets/imgproducto/img/lanaalpacalisto.jpg" alt="lanas">
+      <div class="fav_filter">
+        <i class="fa-regular fa-heart"></i>
+        <p>Lana</p>
+      </div>
+      <h4>Alpaca de 250Grs. Grosor: 2/10.</h4>
+      <div class="color">
+        <button>B</button>
+        <button>L</button>
+        <button>R</button>
+      </div>
+      <div class="precio_btn">
+        <h2> $950.00 </h2>
+        <button class="btn_compra" href="#"> <i class="fa-solid fa-cart-plus"></i> </button>
+      </div>
+    </div>
+
+    <div class="card_parent">
+      <img src="/assets/imgproducto/img/lanamerino.jpg" alt="lanas">
+      <div class="fav_filter">
+        <i class="fa-regular fa-heart"></i>
+        <p>Lana</p>
+      </div>
+      <h4>Merino de 150Grs. Algodón SemiGrueso</h4>
+      <div class="color">
+        <button>B</button>
+        <button>L</button>
+        <button>R</button>
+      </div>
+      <div class="precio_btn">
+        <h2> $950.00 </h2>
+        <button class="btn_compra" href="#"> <i class="fa-solid fa-cart-plus"></i> </button>
+      </div>
+    </div>
+
+    <div class="card_parent">
+      <img src="/assets/imgproducto/img/lanachenillegrueso.jpg" alt="lanas">
+      <div class="fav_filter">
+        <i class="fa-regular fa-heart"></i>
+        <p>Lana</p>
+      </div>
+      <h4>Chenille de 200Grs. Grueso. 120 Mts.</h4>
+      <div class="color">
+        <button>B</button>
+        <button>L</button>
+        <button>R</button>
+      </div>
+      <div class="precio_btn">
+        <h2> $950.00 </h2>
+        <button class="btn_compra" href="#"> <i class="fa-solid fa-cart-plus"></i> </button>
+      </div>
+    </div>
+
+    <!-- Combos -->
+
+    <div class="card_parent">
+      <img src="/assets/imgproducto/img/agujashilo.jpg" alt="lanas">
+      <div class="fav_filter">
+        <i class="fa-regular fa-heart"></i>
+        <p>Combo</p>
+      </div>
+      <h4>Aguja Metal Varios Números + Ovillo 50Grs.</h4>
+      <div class="color">
+        <button>B</button>
+        <button>L</button>
+        <button>R</button>
+      </div>
+      <div class="precio_btn">
+        <h2> $950.00 </h2>
+        <button class="btn_compra" href="#"> <i class="fa-solid fa-cart-plus"></i> </button>
+      </div>
+    </div>
+
+    <div class="card_parent">
+      <img src="/assets/imgproducto/img/combotijaguhiloblanco.jpg" alt="lanas">
+      <div class="fav_filter">
+        <i class="fa-regular fa-heart"></i>
+        <p>Combo</p>
+      </div>
+      
+      <h4>Algodón 8-3 + Aguja a Elección + Tijera</h4>
+      <div class="color">
+        <button>B</button>
+        <button>L</button>
+        <button>R</button>
+      </div>
+      <div class="precio_btn">
+        <h2> $950.00 </h2>
+        <button class="btn_compra" href="#"> <i class="fa-solid fa-cart-plus"></i> </button>
+      </div>
+    </div>
+
+    <div class="card_parent">
+      <img src="/assets/imgproducto/img/combovioletatodo.jpg" alt="lanas">
+      <div class="fav_filter">
+        <i class="fa-regular fa-heart"></i>
+        <p>Combo</p>
+      </div>
+      <h4>Algodón 150Grs. + Tijera + lapicera + Marcador</h4>
+      <div class="color">
+        <button>B</button>
+        <button>L</button>
+        <button>R</button>
+      </div>
+      <div class="precio_btn">
+        <h2> $950.00 </h2>
+        <button class="btn_compra" href="#"> <i class="fa-solid fa-cart-plus"></i> </button>
+      </div>
+    </div>
+
+
+    <div class="card_parent">
+      <img src="/assets/imgproducto/img/Set32piezas.jpg" alt="Combos">
+      <div class="fav_filter">
+        <i class="fa-regular fa-heart"></i>
+        <p>Combo</p>
+      </div>
+      <h4>Set 32 piezas. Agujas + Cartuchera + Contador</h4>
+      <div class="color">
+        <button>B</button>
+        <button>L</button>
+        <button>R</button>
+      </div>
+      <div class="precio_btn">
+        <h2> $950.00 </h2>
+        <button class="btn_compra" href="#"> <i class="fa-solid fa-cart-plus"></i> </button>
+      </div>
+    </div>
+
+  <!-- Accesorio -->
+
+    <div class="card_parent">
+      <img src="/assets/imgproducto/img/comboagujas.jpg" alt="lanas">
+      <div class="fav_filter">
+        <i class="fa-regular fa-heart"></i>
+        <p>Accesorio</p>
+      </div>
+      <h4>Agujas de Silicona x Unidad</h4>
+      <div class="color">
+        <button>B</button>
+        <button>L</button>
+        <button>R</button>
+      </div>
+      <div class="precio_btn">
+        <h2> $950.00 </h2>
+        <button class="btn_compra" href="#"> <i class="fa-solid fa-cart-plus"></i> </button>
+      </div>
+    </div>
+
+    <div class="card_parent">
+      <img src="/assets/imgproducto/img/alfileteros.jpg" alt="lanas">
+      <div class="fav_filter">
+        <i class="fa-regular fa-heart"></i>
+        <p>Accesorio</p>
+      </div>
+      <h4>Alfiletero Artesanal Premium 10Cms. </h4>
+      <div class="color">
+        <button>B</button>
+        <button>L</button>
+        <button>R</button>
+      </div>
+      <div class="precio_btn">
+        <h2> $950.00 </h2>
+        <button class="btn_compra" href="#"> <i class="fa-solid fa-cart-plus"></i> </button>
+      </div>
+    </div>
+
+    <div class="card_parent">
+      <img src="/assets/imgproducto/img/agujascolores.jpg" alt="lanas">
+      <div class="fav_filter">
+        <i class="fa-regular fa-heart"></i>
+        <p>Accesorio</p>
+      </div>
+      <h4>Agujas Plastico x U. Varios Números.</h4>
+      <div class="color">
+        <button>B</button>
+        <button>L</button>
+        <button>R</button>
+      </div>
+      <div class="precio_btn">
+        <h5> $950.00 </h5>
+        <button class="btn_compra" href="#"> <i class="fa-solid fa-cart-plus"></i> </button>
+      </div>
+    </div>
+
+    <div class="card_parent">
+      <img src="/assets/imgproducto/img/tijeracrochetlisto.jpg" alt="Tijera">
+      <div class="fav_filter">
+        <i class="fa-regular fa-heart"></i>
+        <p>Accesorio</p>
+      </div>
+      <h4>Tijera Recta para Tejidos. 11 Cm.</h4>
+      <div class="color">
+        <button>B</button>
+        <button>L</button>
+        <button>R</button>
+      </div>
+      <div class="precio_btn">
+        <h2> $950.00 </h2>
+        <button class="btn_compra" href="#"> <i class="fa-solid fa-cart-plus"></i> </button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <footer>
+    <div class="footer_content">
+        <div class="footer_card">
+            <div class="footer_logo">
+                <img src="/assets/logos/logoecowoolen.png" alt="logo">
+            </div>
+
+        </div>
+
+        <div class="footer_card">
+            <div class="footer_social">
+                <h4>Contactanos</h4>
+                <p>Seguinos en nuestras redes sociales</p>
+                <a href="https://m.facebook.com" class="footer_face"><i class="fa-brands fa-facebook"></i>EcoWoolen Lanas</a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i>@Ecowoolelanas</a>
+                Comunicate con Nosotros
+                <a href="https://goo.gl/maps/y5MmrURjBTE4KnEr7" class="footer_direccion"><i class="fa-solid fa-location-dot"></i>Avenida Siempre Viva 123, CABA.</a>
+                <a href="https://www.whatsapp.com/?lang=es"><i class="fa-brands fa-whatsapp"></i>1144558822</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer_card">
+            <div class="footer_form">
+                <form action="">
+                    <h4>Suscribite a Nuestro Newslatter</h4>
+                    <p>No te pierdas ninguna promoción</p>
+                    <label for="get_email">Ingresa tu Email</label>
+                    <input id="get_email" type="email">
+                    <label for="get_Nombre">Ingresa tu Nombre</label>
+                    <input id="get_email" type="text">
+                    <a href="#">Enviar</a>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+<script src="/productdata.js"></script>
+<script src="/main.js"></script>
+</body>
+</html>

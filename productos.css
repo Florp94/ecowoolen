@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600&family=Inter:wght@200;300;400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family:'Geologica', sans-serif;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 65px;
+}
+
+nav {
+    width: 100%;
+    background: #f5f5f5;
+    box-shadow: #000001 0px 4px 8px;
+    position:fixed;
+    z-index: 100;
+    top: 0;
+    height: 80px;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    line-height: 80px;
+    z-index: 100;
+}
+
+.container_logo img {
+    height: 80px;
+    cursor: pointer;
+}
+
+
+
+.links .link {
+    display: inline-block;
+}
+
+.links a {
+    text-decoration: none;
+    color: #131415;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin: 0 30px;
+}
+
+.links a:hover {
+    border-bottom: 2px solid #508484;
+}
+
+.toggle {
+    color: #508484;
+    margin-right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    transform: rotate(90deg);
+    margin-bottom: 30px;
+    transition: .3s;
+    display: none;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+
+
+
+
+@media (max-width:800px) {
+    .toggle {
+        display: inline-block;
+    }
+    .links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: #131415;
+        text-align: center;
+        overflow: hidden;
+        height: calc(100vh - 80px);
+        margin-top: 80px;
+        width: 40%;
+        right: 0;
+        right: -100vh;
+        transition: .3s;
+        z-index: -1;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .links a  {
+        color: #508484;
+    }
+
+    .links li {
+        margin: 10px;
+        z-index: -1;
+    }
+    
+    .links .link:hover {
+        background: #282a2c;
+    }
+}
+
+@media (max-width:500px) {
+    .links {
+        width: 100%;
+    }
+}

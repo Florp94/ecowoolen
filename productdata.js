@@ -1,3 +1,5 @@
+const shopContent = document.getElementById("shop_content");
+
 const productData = [
     {
         id: 1,
@@ -115,22 +117,23 @@ const productData = [
 
 ];
 
-
-const divideProductsInParts = (size) => {
-    let productsList = [];
-    for (let i = 0; i < productData.length; i += size) {
-        productsList.push(productData.slice(i, i + size));
-    }
-      return productsList; 
-    };
+let carrito = [];
 
 
-    const appState = {
-        product: divideProductsInParts(4),
-        currentProductsIndex: 0,
-        productsinit: divideProductsInParts(4).length,
-        activeFilter: null,
-    };
+// productData.forEach((product) => {
+//     const {id, name, precio, cardImg, category} = product;
 
-    
+//     let content = document.createElement("div");
+
+//     content.innerHTML = `
+//         <img src="${cardImg}">
+//         <p>${category}</p>
+//         <h3>${name}</h3>
+//         <p>$ ${precio}</p>
+//     ` ;
+
+//     shopContent.append(content);
+
+// });
+
 

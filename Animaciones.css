@@ -69,8 +69,15 @@
     animation-delay: 0.3s;
 }
 
-.parent {
+
+.card {
     opacity: 0;
     animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.3s;
+}
+
+.title_hero {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-left 0.9s ease-in-out;
     animation-delay: 0.3s;
 }

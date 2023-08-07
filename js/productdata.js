@@ -1,139 +1,165 @@
-const shopContent = document.getElementById("shop_content");
-
 const productData = [
     {
         id: 1,
-        name:"Bahia de 150Grs",
+        name:"Cashmilon de 150Grs",
+        info: "Madeja 100% acrilico 4/7 grosor fino",
         precio: 950.00,
-        category: "Hilo",
-        cardImg: "/assets/imgproducto/img/lanaspastel.jpg",
-
+        category: "Lana",
+        cardImg: "./assets/imgproducto/img/lanaspastel.jpg",
+        cantidad: 1,
     },
     {
         id: 2,
-        name:"Macramé de 150Grs",
+        name:"Hilo de algodón 1 kg",
         precio: 950.00,
+        info: "Ideal macramé, 27 hebras (4,5mm)",
         category: "Hilo",
         cardImg: "/assets/imgproducto/img/macramehilolisto.jpg",
+        cantidad: 1,
     },
     {
         id: 3,
         name:"Seda de 150Grs",
+        info: "Grosor 8/3, mediano. aguja n° 3.5mm",
         precio: 780.00 ,
         category: "Hilo",
-        cardImg: "/assets/imgproducto/img/hilosedalisto.jpg",
+        cardImg: "assets/imgproducto/img/hilosedalisto.jpg",
+        cantidad: 1,
     },
     {
         id: 4,
-        name:"Yute de 150Grs.",
+        name:"Yute 100m",
+        info: "Hilo natural, Grosor 5mm",
         precio: 1100.00 ,
         category: "Hilo",
         cardImg: "/assets/imgproducto/img/hiloyuterusticolisto.jpg",
+        cantidad: 1,
     },
     {
         id: 5,
         name:"Shetland de 150Grs.",
+        info: "55% lana 45% acrílico. Grosor 4/7",
         precio: 950.00 ,
         category: "Lana",
         cardImg: "/assets/imgproducto/img/lanashetlandlisto.jpg",
+        cantidad: 1,
     },
     {
         id: 6,
         name:"Alpaca de 250Grs.",
+        info: "50% acrílico. Grosor 4/7",
         precio: 1500.00 ,
         category: "Lana",
         cardImg: "/assets/imgproducto/img/lanaalpacalisto.jpg",
+        cantidad: 1,
     },
     {
         id: 7,
         name:"Merino de 150Grs.",
+        info: "90% Merino 10% Poliamida",
         precio: 780.00 ,
         category: "Lana",
         cardImg: "/assets/imgproducto/img/lanamerino.jpg",
+        cantidad: 1,
     },
     {
         id: 8,
         name:"Chenille de 200Grs.",
+        info: "Aterciopelado. Grosor 4/7",
         precio: 1500.00 ,
         category: "Lana",
         cardImg: "/assets/imgproducto/img/lanachenillegrueso.jpg",
+        cantidad: 1,
     },
     {
         id: 9,
-        name:"Aguja Metal Varios Números + Ovillo 50Grs.",
+        name:"Aguja Metal y Ovillo",
+        info: "Grosor fino 8-3. Aguja a elección",
         precio: 800.00 ,
         category: "Combo",
         cardImg: "/assets/imgproducto/img/agujashilo.jpg",
+        cantidad: 1,
     },
     {
         id: 10,
-        name:"Algodon 8-3 + aguja a elección + tijera",
+        name:"Algodon, aguja y tijera",
+        info: "Grosor 8-3. Aguja a elección. Tijera 10Cm.",
         precio: 1000.00 ,
         category: "Combo",
         cardImg: "/assets/imgproducto/img/combotijaguhiloblanco.jpg",
+        cantidad: 1,
     },
     {
         id: 11,
-        name:"Algodón 150Grs. + Tijera + lapicera + Marcador",
-        precio: 1800.00 ,
+        name:"Combo tejedora",
+        info: "Tijera, Lapicera, Marcador, aguja, Hilo",
+        precio: 2400.00 ,
         category: "Combo",
         cardImg: "/assets/imgproducto/img/combovioletatodo.jpg",
+        cantidad: 1,
     },
     {
         id: 12,
-        name:"Set 32 piezas. Agujas + Cartuchera + Contador",
+        name:"Combo principiante",
+        info: "Agujas, Marcadores, cartuchera y +",
         precio: 5100.00 ,
         category: "Combo",
         cardImg: "/assets/imgproducto/img/Set32piezas.jpg",
+        cantidad: 1,
     },
     {
         id: 13,
-        name:"Agujas de Silicona x Unidad",
+        name:"Aguja de Silicona",
+        info: "Varios Números y colores",
         precio: 300.00 ,
         category: "Accesorio",
         cardImg: "/assets/imgproducto/img/comboagujas.jpg",
+        cantidad: 1,
     },
     {
         id: 14,
-        name:"Alfiletero Artesanal Premium 10Cms.",
+        name:"Alfiletero Art. 10Cms.",
+        info: "Alfiletero Artesanal Hilo de algodón",
         precio: 1500.00 ,
         category: "Accesorio",
         cardImg: "/assets/imgproducto/img/alfileteros.jpg",
+        cantidad: 1,
     },
     {
         id: 15,
-        name:"Agujas Plastico x Unidad. Varios Números.",
+        name:"Agujas Plastico",
+        info: "Varios Números y colores",
         precio: 1100.00 ,
         category: "Accesorio",
         cardImg: "/assets/imgproducto/img/agujascolores.jpg",
+        cantidad: 1,
     },
     {
         id: 16,
-        name:"Tijera Recta para Tejidos. 11 Cm.",
+        name:"Tijera 11 Cm.",
+        info: "Tijera de Acero Inoxidable",
         precio: 4000.00 ,
         category: "Accesorio",
         cardImg: "/assets/imgproducto/img/tijeracrochetlisto.jpg",
+        cantidad: 1,
     },
 
 ];
 
-let carrito = [];
 
+const divideProductsInParts = (size) => {
+    let productList = [];
+    for (let i = 0; i < productData.length; i += size) {
+        productList.push(productData.slice(i, i + size));
+    }
+    return productList;
+};
 
-// productData.forEach((product) => {
-//     const {id, name, precio, cardImg, category} = product;
-
-//     let content = document.createElement("div");
-
-//     content.innerHTML = `
-//         <img src="${cardImg}">
-//         <p>${category}</p>
-//         <h3>${name}</h3>
-//         <p>$ ${precio}</p>
-//     ` ;
-
-//     shopContent.append(content);
-
-// });
+const appState = {
+    product: divideProductsInParts(4),
+    CurrentProductsIndex: 0,
+    productsLimit: divideProductsInParts(4).length,
+    activeFilter:null,
+};
 
 

@@ -5,42 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="productos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
-    <title>Document</title>
+    <link rel="stylesheet" href="/Animaciones.css">
+    <title>EcoWoolen</title>
 </head>
 <body>
 
+    <!-- NAVBAR -->
+
     <nav class="nav">
+        
+        
         <div class="container">
             <div class="container_logo">
                 <img src="/assets/logos/logoecowoolen.png" alt="logo">
             </div>
-            <ul class="links active">
-                <li class="link"><a href="#">Home</a></li>
-                <li class="link"><a href="#">Productos</a></li>
-                <li class="link"><a href="#">Nosotros</a></li>
-                <li class="link"><a href="#">Registrate/Login</a></li>
 
-            </ul>
-            <div class="toggle">
-                |||
+            <div class="content_nav">
+
+                <ul class="links">
+                    <li class="link"><a href="/index.html">Home</a></li>
+                    <li class="link"><a class="aqui" href="#" >Hilados</a></li>
+                    <li class="link"><a href="#">Nosotros</a></li>
+                    <li class="link"><a href="/login.html">Registrate/Login</a></li>
+
+                </ul>
+            
+                <div class="toggle">
+                    |||
+                </div>
+                <div class="carrito_nav">
+                    <i class="fa-solid  fa-cart-shopping carrito" id="verCarrito"><span id="cantidadcarrito" class="cantidad_carrito"></span></i>
+                </div>
             </div>
         </div>
 
+
     </nav>
 
-    <section>
+    <!-- FIN NAVBAR -->
+<!-- HERO -->
 
-    </section>
+    <div class="title_hero">
+        <h1>Hilados</h1>
+        <span class="borde_title"></span>
+    </div>
 
-    <!-- contenido -->
+    <!-- FIN HERO -->
+    
+    
+    <div id="modal_container" class="modal_container">
+        
+    </div>
+
+    
+
+    <!-- PRODUCTOS -->
 
     <div id="shop_content" class="shop_content">
         
 
     </div>
+
+    <!-- FIN PRODUCTOS -->
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer_content">
+            <div class="footer_card">
+                <div class="footer_logo">
+                    <img src="/assets/logos/logoecowoolen.png" alt="logo">
+                </div>
+
+            </div>
+
+            <div class="footer_card">
+                <div class="footer_social">
+                    <h4>Contactanos</h4>
+                    <p>Seguinos en nuestras redes sociales</p>
+                    <a href="https://m.facebook.com" class="footer_face"><i class="fa-brands fa-facebook"></i>EcoWoolen Lanas</a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i>@Ecowoolelanas</a>
+                    Comunicate con Nosotros
+                    <a href="https://goo.gl/maps/y5MmrURjBTE4KnEr7" class="footer_direccion"><i class="fa-solid fa-location-dot"></i>Avenida Siempre Viva 123, CABA.</a>
+                    <a href="https://www.whatsapp.com/?lang=es"><i class="fa-brands fa-whatsapp"></i>1144558822</a>
+
+                </div>
+
+            </div>
+
+            <div class="footer_card">
+                <div class="footer_form">
+                    <form action="" id="suscripcion">
+                        <h4>Suscribite a Nuestro Newslatter</h4>
+                        <p>No te pierdas ninguna promoción</p>
+                        <label for="get_email">Ingresa tu Email</label>
+                        <input id="get_email" type="email">
+                        <label for="get_Nombre">Ingresa tu Nombre</label>
+                        <input id="get_email" type="text">
+                        <a href="#">Enviar</a>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- FIN FOOTER -->
     
-    <script src="/productdata.js"></script>
-    <script src="/productosjs.js"></script>
+    <script src="./js/productdata.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/productosjs.js"></script>
+    <script src="./js/carrito.js"></script>
 </body>
 </html>

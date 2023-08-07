@@ -11,32 +11,46 @@
 <body>
 
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="/assets/logos/logoecowoolen.png" alt="logo ecowoolen">
-            </div>
-            <ul class="nav_links">
-                <input type="checkbox" id="check_toggle">
-                <label for="check_toggle" class="hamburguer"><i class="fa-solid fa-bars"></i></label>
+         <!-- NAVBAR -->
 
-                <div class="menu">
-                    <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="/cardsprueba.html">Productos</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="/login.html" target="_blank">Registrate/Login</a></li>
-                    <span class="line"></span>
-                   <div class="cart_fav">
-                    <li><a href="#"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
-                    <li cart_nav><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+    <nav class="nav">
+        
+        
+        <div class="container">
+            <div class="container_logo">
+                <img src="/assets/logos/logoecowoolen.png" alt="logo">
+            </div>
+
+            <div class="content_nav">
+
+                <ul class="links">
+                    <li class="link"><a href="/index.html">Home</a></li>
+                    <li class="link"><a href="/productos.html" >Hilados</a></li>
+                    <li class="link"><a href="/index.html">Nosotros</a></li>
+                    <li class="link"><a class="aqui" href="/login.html">Registrate/Login</a></li>
+
+                </ul>
+            
+                <div class="toggle">
+                    |||
                 </div>
+                <div class="carrito_nav">
+                    <i class="fa-solid  fa-cart-shopping carrito" id="verCarrito"><span id="cantidadcarrito" class="cantidad_carrito"></span></i>
                 </div>
-                
-            </ul>
-            <div class="overlay"></div> 
-        </nav>
+            </div>
+        </div>
+
+
+    </nav>
+
+    <!-- FIN NAVBAR -->
     </header>
     
     <main>
+
+        <div id="modal_container" class="modal_container">
+        
+        </div>
 
         <div class="container_form" id="register">
             <div class="information">
@@ -148,6 +162,10 @@
         </div>
     </footer>
 
-    <script src="/login.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="./js/productdata.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/productosjs.js"></script>
+    <script src="./js/carrito.js"></script>
 </body>
 </html>

@@ -725,16 +725,28 @@ footer {
     }
 
     .modal_content img {
-        width: 25%;
+        width: 20%;
     }
 
     .modal_content .modal_precio h3 {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     .modal_content .modal_precio p {
         font-size: 0.8rem;
     } 
+
+    .modal_cantidad {
+        display: flex;
+        flex-direction:row;
+        gap: 5px;
+    }
+
+    .modal_content .modal_cantidad .btn_cantidad {
+        padding: 5px;
+        font-size: 0.7rem;
+    }
+
 
     .shop_content {
         width: 100%;
@@ -786,7 +798,7 @@ footer {
     }
 
     .modal_content img {
-        width: 30%;
+        width: 20%;
     }
     
     .modal_precio {
@@ -796,7 +808,7 @@ footer {
     }
 
     .modal_content .modal_precio h3 {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         font-weight:500;
     }
 

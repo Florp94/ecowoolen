@@ -1419,6 +1419,7 @@ footer {
 
     .card {
         width: 80%;
+        height: 50vh;
     }
 }
 
